@@ -1,0 +1,20 @@
+from tkinter import *
+import os
+
+root = Tk()
+root.geometry("500x500")
+root.title("Virtual Mouse")
+Label(root, text="WELCOME TO VIRTUAL MOUSE PROJECT", fg='white', bg='black', font=("arial", 16, "bold")).pack()
+
+
+def mafile():
+    os.system('main.py')
+
+
+btn = Button(root, text=' START  ', bd='5',bg='black',fg='white',
+             command=lambda: mafile())
+
+btn.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+
+root.mainloop()
